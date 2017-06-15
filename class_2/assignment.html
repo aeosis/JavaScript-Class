@@ -10,7 +10,10 @@
 
  </div>
  <script>
-   let year = prompt("Enter your birth year");
+   let promptYear = prompt("Enter your birth year");
+   let today = new Date();
+   let personsAge = today.getFullYear() - promptYear;
+   echo("You might be " + personsAge);
  </script>
 </body>
 </html>
