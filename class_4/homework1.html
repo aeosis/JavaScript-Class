@@ -1,0 +1,35 @@
+<!--
+Homework
+========
+1. (5 pts) Define a function that returns true if its argument is a palindrome, otherwise returns false. The function should work for strings and numbers. Verify the function with a few random examples and display the results. 
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+function isPalindrome(word) {
+	let length = word.length;
+	for (let i = 0, j = length - 1; i <= length / 2; i++, j--) {
+		if (word.charAt(j) != word.charAt(i)) {
+			return false;
+		}
+	}
+	return true;
+}
+let myString = "alaala";
+echo(isPalindrome(myString));
+
+ </script>
+</body>
+</html>

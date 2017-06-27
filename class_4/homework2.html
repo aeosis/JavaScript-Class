@@ -1,0 +1,33 @@
+<!--
+Homework
+========
+
+2. (7 pts) Write a function that takes two integers and returns their product. The product should be calculated with a loop using only addition.
+P.S. Create the separate files for each assignment and homework and push to your fork. You can use sample.html as a template. echo function defined in helper.js file will display results in the html. -->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+ function mulitplyIntegers(x,y) {
+    let sum = 0;
+ 	for (let i = 0; i < y; i++) {
+ 			sum += x;
+ 	}
+ 	return sum;
+ }
+
+echo(mulitplyIntegers(2,3));
+	
+ </script>
+</body>
+</html>
