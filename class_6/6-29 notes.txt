@@ -1,0 +1,41 @@
+1) Anonymous Function
+
+regular function:
+function square(i){
+	returni*i;
+}
+
+-----------------
+anonymous function:
+let square = function (i) {
+	returni*i;
+}
+
+
+
+
+2) Loop : Break/Continue
+let accounts=[{email: example@example.com
+	pasDue:false},
+	{email....@
+			}....};
+for (leti=0; i<accs.length;i++) {
+	let account = accs[i]; 
+	if (!account.pastDue) {
+		continue; 
+	}
+	//Do Stuff
+
+------------------
+let items=["apple","banana","orange","kiwi"];
+	let seachedItemIdx=-1;
+	for(let i=0;i<items.length;i++){
+		Let item=items[i];
+		if(item=="orange"){
+			searchedItemIdx=i;
+			break;
+		}
+	}
+
+3) Ternary Operator
+let result = condition?"yes":"no";
