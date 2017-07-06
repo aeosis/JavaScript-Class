@@ -1,0 +1,64 @@
+<!--1. (5 pts) Ask a user to enter a year. Display [Chinese zodiac](https://en.wikipedia.org/wiki/Chinese_zodiac) sign that is assigned to the year and also a few subsequent years of that sign. Use switch 
+statement.-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+	  	(function () {
+		let zodiac = ["Monkey", "Rooster", "Dog", "Pig", "Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat"];
+		let birthday = parseInt(prompt("What is your birth year?"));
+		let animal = zodiac[parseInt(birthday) % 12];
+		switch (animal) {
+		case "Monkey":
+			alert("You're a Monkey! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Rooster":
+			alert("You're a Rooster! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Dog":
+			alert("You're a Dog! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Pig":
+			alert("You're a Pig! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Rat":
+			alert("You're a Rat! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Ox":
+			alert("You're a Ox! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Tiger":
+			alert("You're a Tiger! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Rabbit":
+			alert("You're a Rabbit! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Dragon":
+			alert("You're a Dragon! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Snake":
+			alert("You're a Snake! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Horse":
+			alert("You're a Horse! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;
+		case "Goat":
+			alert("You're a Goat! Other years are: " + (birthday - 12) + ", " + (birthday + 12) );
+			break;			
+		default:
+			alert("Invalid birthdayut");
+		}
+	})();
+ </script>
+</body>
+</html>
+

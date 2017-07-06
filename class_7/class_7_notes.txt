@@ -1,0 +1,26 @@
+1.self - executing function  - isolate your code from the rest of the code.variables will not overwrite other code variables.
+2.switch
+
+(function () {
+	console.log("I am part of a self-executing function");
+})
+	();
+
+	(function () {
+		let inp = prompt("enter fruit");
+
+		switch (inp) {
+		case "apple":
+			alert("apple - 58 cents");
+			break;
+		case "banana":
+			alert("banana - 40 cents");
+			break;
+		case "kiwi":
+		case "mango":
+			alert("kiwi and mango $1");
+			break;
+		default:
+			alert("we don't have this fruit");
+		}
+	})();
