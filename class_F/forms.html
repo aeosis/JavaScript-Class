@@ -140,9 +140,33 @@
         //  return false;
         //};
         /* Option 4 */      
-        //submitButton.addEventListener("click", function (e) {
-        //  e.preventDefault();
-        //});
+        submitButton.addEventListener("click", function (e) {
+          e.preventDefault();
+		  let username = document.querySelector("#username").value;
+		  let email = document.querySelector("#email").value;
+		  let password = document.querySelector("#password").value;
+		  let passwordConfirm = document.querySelector("#password_confirm").value;
+		  let agreeWithTerms = document.querySelector(".form-check-input").checked;
+
+		  function isValidEmail(email){
+		  let re = / /;
+		  return re.test(email);
+		  }
+		  
+		  function isValidUsername(username){
+		   let re = / /;
+		  return re.test(username);
+		  
+		  }
+		  if (username.isValidUsername && email.isValidEmail && agreeWithTerms==true) {
+		    console.log("All is well!");
+		  
+		  } else {
+		    e.preventDefault();
+		  }
+		  
+		  console.log(username);
+        });
 
       })();
     </script>

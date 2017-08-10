@@ -88,9 +88,19 @@
       </div>
     </footer>
     <script>
-      (function () {
-      
-      })();
+     (function () {
+     	let grandparent = document.querySelector("#grandparent");
+     	grandparent.addEventListener("click", function () {
+     		console.log("I am grandparent");
+     	}, true);
+     	grandparent.addEventListener("click", function () {
+     		console.log("I am grandparent again");
+     	});
+     	let child = document.querySelector("#child");
+     	child.addEventListener("click", function () {
+     		console.log("I am child");
+     	});
+     })();
     </script>
   </body>
 </html>
